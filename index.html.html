@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctoralia - Simulação</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+    <link rel="stylesheet" href="doct.css" />
+</head>
+
+<body>
+
+    <button class="chat-toggle-button" onclick="toggleChat()">💬</button>
+
+
+    <header>
+        <h1>Doctoralia - Simulação</h1>
+        <div class="accessibility-controls">
+            <button id="dark-mode-toggle">🌙 Tema Escuro</button>
+            <button id="contrast-toggle">🔳 Alto Contraste</button>
+            <button id="increase-font">🔠 Aumentar Fonte</button>
+            <button id="decrease-font">🔡 Diminuir Fonte</button>
+        </div>
+
+        <div class="navbar">
+            <input type="text" placeholder="Pesquisar médicos..." id="search-bar">
+            <button>Pesquisar</button>
+
+            <div class="dropdown">
+                <button>Especialidade</button>
+                <div class="dropdown-content">
+                    <a href="#">Cardiologia</a>
+                    <a href="#">Dermatologia</a>
+                    <a href="#">Pediatria</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button>Cidade</button>
+                <div class="dropdown-content">
+                    <a href="#">São Paulo</a>
+                    <a href="#">Rio de Janeiro</a>
+                    <a href="#">Belo Horizonte</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="logo-container">
+        <a href="https://www.doctoralia.com.br" target="_blank">
+            <img src="https://platform.docplanner.com/img/br/open-graph/og.png?3060678595" alt="Logo Doctoralia">
+        </a>
+    </div>
+
+    <div class="summary-container">
+        <h2>Sobre a Doctoralia</h2>
+        <p>A Doctoralia é uma plataforma líder de agendamento de consultas médicas, conectando pacientes com médicos,
+            dentistas e outros profissionais de saúde. Através do nosso site, você pode encontrar o melhor especialista
+            de acordo com suas necessidades e agendar consultas online de forma simples e rápida.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <main>
+        <p>Bem-vindo ao protótipo de Acessibilidade e ChatBot.</p>
+    </main>
+
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+        <button onclick="enviarMensagem()">Enviar</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Doctoralia - Simulação</p>
+    </footer>
+
+    <div class="section-divider"></div>
+
+    <!-- VLibras Plugin - GOV.BR -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="doct.js"></script>
+
+</body>
+
+</html>
